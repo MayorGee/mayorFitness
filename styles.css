@@ -1,0 +1,214 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), grey),
+    url("https://image.freepik.com/free-vector/gorilla-head-monochrome-style_225004-474.jpg")
+      center fixed no-repeat;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(255, 254, 254);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 4px 4px;
+}
+
+#header-img {
+  width: auto;
+  height: 80%;
+  margin: auto 10px;
+}
+
+#nav-bar {
+  height: 100%;
+  width: 50%;
+  padding-top: 60px;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#nav-bar ul li {
+  padding: 10px;
+  margin: 0 10px;
+  background: linear-gradient(90deg, red, brown);
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#nav-bar ul li:hover {
+  background: linear-gradient(90deg, rgb(224, 10, 10), rgb(129, 31, 31));
+  box-shadow: 0 0 17px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+#main {
+  width: 70%;
+  height: auto;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#main h1 {
+  font-family: "Bangers";
+  font-size: 45px;
+  color: rgb(245, 14, 14);
+  margin: 10px 0;
+}
+
+#form #email {
+  width: 35%;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+#form #submit {
+  width: 25%;
+  height: 38px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 10px;
+  font-family: "Bangers";
+  font-size: 90%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+#form #submit:hover {
+  background-color: red;
+  color: black;
+}
+
+#content {
+  color: white;
+  font-family: "Raleway";
+}
+
+.content {
+  display: flex;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.content h2 {
+  color: rgb(241, 80, 16);
+}
+
+.fas {
+  font-size: 70px;
+  margin: auto 20px;
+}
+
+iframe {
+  width: 60%;
+  height: 400px;
+  margin: 20px auto;
+}
+
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: auto;
+}
+
+aside div {
+  width: 30%;
+  height: 230px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+aside div h4 {
+  background-color: grey;
+  color: black;
+  height: 20%;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  font-family: "Roboto";
+}
+
+aside div .price {
+  padding: 15px;
+  font-size: 25px;
+}
+aside div li {
+  color: white;
+  list-style-type: none;
+  padding: 5px;
+  font-size: 90%;
+}
+
+footer {
+  background-color: rgba(239, 242, 56, 0.5);
+  border-radius: 4px 4px 0 0;
+  height: 100px;
+  text-align: right;
+  font-family: "Raleway";
+  
+}
+
+footer ul {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+footer ul li {
+  padding: 0 15px;
+  display: inline;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer p {
+  margin-right: 15px;
+}
+.footer-text {
+  margin-top: 55px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  #main{
+    width:90%;
+  }
+  #form #email {
+    width: 45%;
+  }
+
+  iframe {
+    width: 90%;
+    
+  }
+  #nav-bar ul li {
+    display: none;
+  }
+}
